@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head")  %> 
+</head>
+<body>
+    <header>
+        Pokedex
+    </header>
+    <div id="index-top-container">
+        <div id="index-entries-container">
+            <% for (pkmn of pokedex) { %>
+                <div id="index-individual-container">
+                    <img src="<%= pkmn.img %> " class="index-pkmn-img">
+                    <table class="index-pkmn-info">
+                        <tr>
+                            <td>Name:</td>
+                            <td><%= pkmn.name %> </td>
+                        </tr>
+                        <tr>
+                            <td>Type:</td>
+                            <td>pkmn.type</td>
+                        </tr>
+                    </table>
+                </div>
+            <% } %> 
+        </div>
+    </div>
+</body>
+</html>
