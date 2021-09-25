@@ -23,8 +23,8 @@ const PORT = 3000
 // ROUTES
 ////////////////////////////////////////
 
-app.get("/", (req,res) => {
-    res.send("Hello World")
+app.get("/pokedex", (req,res) => {
+    res.render("index.ejs", {pokedex: pokedex, title: "POKEDEX - Main"})
 })
 
 ////////////////////////////////////////
