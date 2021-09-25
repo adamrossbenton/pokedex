@@ -4,6 +4,7 @@
 
 const express = require("express")
 const methodOverride = require("method-override")
+const pokedex = require('./models/pokemon')
 const app = express()
 
 ////////////////////////////////////////
@@ -16,15 +17,15 @@ const PORT = 3000
 // MIDDLEWARE
 ////////////////////////////////////////
 
-app.get("/", (req,res) => {
-    res.send("Hello World")
-})
+
 
 ////////////////////////////////////////
 // ROUTES
 ////////////////////////////////////////
 
-
+app.get("/", (req,res) => {
+    res.send("Hello World")
+})
 
 ////////////////////////////////////////
 // LISTENER

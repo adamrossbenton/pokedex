@@ -1,4 +1,4 @@
-module.exports = [
+const pokedex = [
   {
     id: "001",
     name: "Bulbasaur",
@@ -50958,3 +50958,4 @@ module.exports = [
     }
   }
 ];
+module.exports = pokedex
