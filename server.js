@@ -28,6 +28,9 @@ app.get("/pokedex", (req,res) => {
     res.render("index.ejs", {pokedex: pokedex, title: "POKEDEX - Main"})
 })
 
+// New
+
+
 // Show
 app.get("/pokedex/:id", (req,res) => {
     res.render("show.ejs", {pkmn: pokedex[req.params.id], title: `POKEDEX - ${pokedex[req.params.id].name}`})

@@ -7,9 +7,18 @@
     <div id="show-top-container">
         <div id="show-pic-to-left">
             <img src="<%=pkmn.img %> ">
+            <h1><%= pkmn.name %> - ID no. <%= pkmn.id  %> </h1>
+            <div id="edit-and-delete-buttons">
+                <form action="">
+                    <input type="submit" value="Edit Pokemon">
+                </form>
+                <form action="">
+                    <input type="submit" value="Delete Pokemon">
+                </form>
+                </div>    
         </div>
         <div id="show-stats-to-right">
-            <h1><%= pkmn.name %> - ID no. <%= pkmn.id  %> </h1>
+            <h3>Information:</h3>
             <table>
                 <tr>
                     <td>Type:</td>
@@ -56,6 +65,9 @@
                 </tr>
             </table>
         </div>
+        <form action="/pokedex">
+            <input type="submit" value="Back to Pokedex">
+        </form>
     </div>
 </body>
 </html>
