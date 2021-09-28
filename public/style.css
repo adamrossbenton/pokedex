@@ -1,6 +1,7 @@
 /* GLOBAL */
 
 body {
+    color: whitesmoke;
     background-color: black;
     font-family: 'Press Start 2P', cursive;
 }
@@ -16,7 +17,6 @@ input {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: whitesmoke;
     background-color: crimson;
     border: 5px solid whitesmoke;
     border-radius: 15px;
@@ -41,7 +41,6 @@ input {
     width: 300px;
     height: 300px;
     margin: 0 auto;
-    color: whitesmoke;
     font-weight: bolder;
 }
 
@@ -58,7 +57,6 @@ input {
     flex-direction: row;
     justify-content: space-around;
     background-color: crimson;
-    color: whitesmoke;
 }
 
 #show-pic-to-left {
