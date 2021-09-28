@@ -9,18 +9,17 @@
     </header>
     <div id="index-top-container">
         <div id="index-entries-container">
-            <% for (pkmn of pokedex) { %>
+            <% for (let i = 0; i < pokedex.length; i++) { %>
                 <div id="index-individual-container">
-                    <a href="/pokedex/<%= pkmn %>"><img src="<%= pkmn.img %> " class="index-pkmn-img"></a>
-                    <!-- <img src="<%= pkmn.img %> " class="index-pkmn-img"> -->
+                    <a href="/pokedex/<%= i %>"><img src="<%= pokedex[i].img %> " class="index-pkmn-img"></a>
                     <table class="index-pkmn-info">
                         <tr>
                             <td>Name:</td>
-                            <td><%= pkmn.name %> </td>
+                            <td><%= pokedex[i].name %> </td>
                         </tr>
                         <tr>
                             <td>Type:</td>
-                            <td><%= pkmn.type %> </td>
+                            <td><%= pokedex[i].type %> </td>
                         </tr>
                     </table>
                 </div>
