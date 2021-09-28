@@ -68,7 +68,26 @@ input {
 
 #show-stats-to-right {
     background-color: black;
+    padding: 25px;
 }
 
-/* NEW */
+/* EDIT */
 
+#edit-top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: crimson;
+}
+
+#edit-show-existing-info {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#edit-update-form {
+    background-color: black;
+    padding: 25px;
+}
