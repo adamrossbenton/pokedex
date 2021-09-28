@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head")  %> 
+</head>
+<body>
+    <div id="edit-top-container">
+        <div id="edit-show-existing-info">
+            <h1>EDIT POKEMON</h1>
+            <img src="<%=pkmn.img %> ">
+            <h1><%= pkmn.name %> - ID no. <%= pkmn.id  %> </h1>    
+        </div>
+        <div id="edit-update-form">
+            <form action="/pokedex/<%= i %>_method=PUT" method="POST">
+                <input type="text" name="name" value="<%= pkmn.name %> ">
+                <input type="text" name="id" placeholder="Pkmn ID">
+                <input type="text" name="type" placeholder="Type">
+                <input type="text" name="classification" placeholder="Classification">
+                <input type="text" name="misc.height" placeholder="Height">
+                <input type="text" name="misc.weight" placeholder="Weight">
+                <input type="text" name="stats.hp" placeholder="HP">
+                <input type="text" name="stats.attack" placeholder="ATK">
+                <input type="text" name="stats.defense" placeholder="DEF">
+                <input type="text" name="stats.spattack" placeholder="SPATK">
+                <input type="text" name="stats.spdefense" placeholder="SPDEF">
+                <input type="text" name="stats.speed" placeholder="SPD">
+                <input type="Submit" value="SUBMIT CHANGES">    
+            </form>
+        <a href="/pokedex/<%= i %> ">CANCEL</a>
+        </div>
+    </div>
+</body>
+</html>

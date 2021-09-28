@@ -41,6 +41,17 @@ app.post("/pokedex", (req,res) => {
     res.redirect("/pokedex")
 })
 
+// Edit
+app.get("pokedex/:id/edit", (req,res) => {
+    res.render(
+        "edit.ejs", {
+            pkmn: pokedex[req.params.id],
+            i: req.params.id,
+            title: `POKEDEX - Edit ${pokedex[req.params.id].name}` 
+        }
+    )
+})
+
 // Show
 app.get("/pokedex/:id", (req,res) => {
     res.render("show.ejs", {pkmn: pokedex[req.params.id], title: `POKEDEX - ${pokedex[req.params.id].name}`})
