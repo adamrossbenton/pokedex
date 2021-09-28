@@ -4,6 +4,22 @@
     <%- include("./partials/head")  %> 
 </head>
 <body>
-    
+    <div id="new-top-container">
+        <h1>ADD NEW POKEMON</h1>
+        <form action="/pokedex" method="POST">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="id" placeholder="Pkmn ID">
+            <input type="text" name="type" placeholder="Type">
+            <input type="text" name="classification" placeholder="Classification">
+            <input type="text" name="misc.height" placeholder="Height">
+            <input type="text" name="misc.weight" placeholder="Weight">
+            <input type="text" name="stats.hp" placeholder="HP">
+            <input type="text" name="stats.attack" placeholder="ATK">
+            <input type="text" name="stats.defense" placeholder="DEF">
+            <input type="text" name="stats.spattack" placeholder="SPATK">
+            <input type="text" name="stats.spdefense" placeholder="SPDEF">
+            <input type="text" name="stats.speed" placeholder="SPD">
+        </form>
+    </div>
 </body>
 </html>

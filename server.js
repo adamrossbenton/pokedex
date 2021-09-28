@@ -17,7 +17,9 @@ const PORT = 3000
 // MIDDLEWARE
 ////////////////////////////////////////
 
-
+app.use(express.urlencoded({extended:false}))
+app.use(express.static("public"))
+app.use(methodOverride("_method"))
 
 ////////////////////////////////////////
 // ROUTES
@@ -31,6 +33,12 @@ app.get("/pokedex", (req,res) => {
 // New
 app.get("/pokedex/new", (req,res) => {
     res.render("new.ejs", {title: `POKEDEX - Add Pokemon`})
+})
+
+// Create
+app.post("/pokedex", (req,res) => {
+    pokedex.push(req.body)
+    res.redirect("/pokedex")
 })
 
 // Show
