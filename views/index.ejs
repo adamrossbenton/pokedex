@@ -4,13 +4,13 @@
     <%- include("./partials/head")  %> 
 </head>
 <body>
-    <header>
-        Pokedex
-    </header>
-    <div id="index-top-container">
+    <header id="index-header">
+        <h1>POKEDEX</h1>
         <form action="/pokedex/new">
             <input type="submit" value="Add New Pokemon">
         </form>
+    </header>
+    <div id="index-top-container">
         <div id="index-entries-container">
             <% for (let i = 0; i < pokedex.length; i++) { %>
                 <div id="index-individual-container">

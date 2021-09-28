@@ -1,0 +1,55 @@
+/* GLOBAL */
+
+body {
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+}
+
+input {
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* INDEX */
+
+#index-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    background-color: crimson;
+    border: 5px solid whitesmoke;
+    border-radius: 15px;
+    padding: 0px 25px;
+}
+
+#index-entries-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+}
+
+#index-individual-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: crimson;
+    border: 5px solid whitesmoke;
+    border-radius: 15px;
+    padding: 0px 25px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+.index-pkmn-img {
+    border-radius: 35px;
+    height: 200px;
+    width: 200px;
+}
+
+/* SHOW */
+
