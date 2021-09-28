@@ -4,6 +4,16 @@
     <%- include("./partials/head")  %> 
 </head>
 <body>
-    <h1>hello world </h1>
+    <div id="show-top-container">
+        <div id="show-pic-to-left">
+            <img src="<% pkmn.img %> ">
+        </div>
+        <div id="show-stats-to-right">
+            <h1><%= pkmn.name %> - ID no. <%= pkmn.id  %> </h1>
+            <table>
+
+            </table>
+        </div>
+    </div>
 </body>
 </html>
