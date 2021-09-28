@@ -25,6 +25,14 @@
                             <td><%= pokedex[i].type %> </td>
                         </tr>
                     </table>
+                    <div id="show-edit-and-delete-buttons">
+                        <form action="/pokedex/<%= i %>/edit">
+                            <input type="submit" value="Edit Pokemon">
+                        </form>
+                        <form action="/pokedex/<%= i %>/delete">
+                            <input type="submit" value="Delete Pokemon">
+                        </form>
+                    </div>    
                 </div>
             <% } %> 
         </div>
