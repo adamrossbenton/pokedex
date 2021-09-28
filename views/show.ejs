@@ -6,12 +6,54 @@
 <body>
     <div id="show-top-container">
         <div id="show-pic-to-left">
-            <img src="<% pkmn.img %> ">
+            <img src="<%=pkmn.img %> ">
         </div>
         <div id="show-stats-to-right">
             <h1><%= pkmn.name %> - ID no. <%= pkmn.id  %> </h1>
             <table>
-
+                <tr>
+                    <td>Type:</td>
+                    <td><%= pkmn.type %> </td>
+                </tr>
+                <tr>
+                    <td>Classification:</td>
+                    <td><%= pkmn.misc.classification %> </td>
+                </tr>
+                <tr>
+                    <td>Height:</td>
+                    <td><%= pkmn.misc.height %> </td>
+                </tr>
+                <tr>
+                    <td>Weight:</td>
+                    <td><%= pkmn.misc.weight %> </td>
+                </tr>
+            </table>
+            <h3>Stats:</h3>
+            <table>
+                <tr>
+                    <td>HP:</td>
+                    <td><%= pkmn.stats.hp %> </td>
+                </tr>
+                <tr>
+                    <td>Attack:</td>
+                    <td><%= pkmn.stats.attack %> </td>
+                </tr>
+                <tr>
+                    <td>Defense:</td>
+                    <td><%= pkmn.stats.defense %> </td>
+                </tr>
+                <tr>
+                    <td>Special Attack:</td>
+                    <td><%= pkmn.stats.spattack %> </td>
+                </tr>
+                <tr>
+                    <td>Special Defense:</td>
+                    <td><%= pkmn.stats.spdefense %> </td>
+                </tr>
+                <tr>
+                    <td>Speed:</td>
+                    <td><%= pkmn.stats.speed %> </td>
+                </tr>
             </table>
         </div>
     </div>
