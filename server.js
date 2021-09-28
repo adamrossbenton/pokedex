@@ -29,7 +29,9 @@ app.get("/pokedex", (req,res) => {
 })
 
 // New
-
+app.get("/pokedex/new", (req,res) => {
+    res.render("new.ejs", {title: `POKEDEX - Add Pokemon`})
+})
 
 // Show
 app.get("/pokedex/:id", (req,res) => {
