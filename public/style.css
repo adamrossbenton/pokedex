@@ -53,3 +53,24 @@ input {
 
 /* SHOW */
 
+#show-top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: crimson;
+    color: whitesmoke;
+}
+
+#show-pic-to-left {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#show-stats-to-right {
+    background-color: black;
+}
+
+/* NEW */
+
