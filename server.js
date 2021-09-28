@@ -36,8 +36,10 @@ app.get("/pokedex/new", (req,res) => {
 })
 
 // Destroy
-
-
+app.delete('/pokedex/:id',(req,res) => {
+    pokedex.splice(req.params.id,1)
+    res.redirect('/pokedex')
+})
 
 // Update - is there a cleaner way to just update specific data?
 app.put("/pokedex/:id", (req,res) => {
