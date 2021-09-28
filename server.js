@@ -42,12 +42,12 @@ app.post("/pokedex", (req,res) => {
 })
 
 // Edit
-app.get("pokedex/:id/edit", (req,res) => {
+app.get('/pokedex/:id/edit',(req,res) => {
     res.render(
-        "edit.ejs", {
+        'edit.ejs', {
             pkmn: pokedex[req.params.id],
             i: req.params.id,
-            title: `POKEDEX - Edit ${pokedex[req.params.id].name}` 
+            title: "POKEDEX - Edit Pokemon"
         }
     )
 })
