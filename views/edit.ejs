@@ -11,19 +11,10 @@
             <h1><%= pkmn.name %> - ID no. <%= pkmn.id  %> </h1>    
         </div>
         <div id="edit-update-form">
-            <form action="/pokedex/<%= i %>_method=PUT" method="POST">
+            <form action="/pokedex/<%= i %>?_method=PUT" method="POST">
                 Name: <input type="text" name="name" value="<%= pkmn.name %> ">
                 ID: <input type="text" name="id" value="<%= pkmn.id %> ">
                 Type: <input type="text" name="type" value="<%= pkmn.type %> ">
-                Classification: <input type="text" name="classification" value="<%= pkmn.classification %> ">
-                Height: <input type="text" name="misc.height" value="<%= pkmn.misc.height %> ">
-                Weight: <input type="text" name="misc.weight" value="<%= pkmn.misc.weight %> ">
-                HP: <input type="text" name="stats.hp" value="<%= pkmn.stats.hp %> ">
-                ATK: <input type="text" name="stats.attack" value="<%=pkmn.stats.attack%>">
-                DEF: <input type="text" name="stats.defense" value="<%= pkmn.stats.defense %> ">
-                SPATK: <input type="text" name="stats.spattack" value="<%= pkmn.stats.spattack %> ">
-                SPDEF: <input type="text" name="stats.spdefense" value="<%= pkmn.stats.spdefense %> ">
-                SPD: <input type="text" name="stats.speed" value="<%= pkmn.stats.speed %> ">
                 <input type="Submit" value="SUBMIT CHANGES">    
             </form>
         <a href="/pokedex/<%= i %> ">CANCEL</a>

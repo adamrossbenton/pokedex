@@ -35,6 +35,19 @@ app.get("/pokedex/new", (req,res) => {
     res.render("new.ejs", {title: `POKEDEX - Add Pokemon`})
 })
 
+// Destroy
+
+
+
+// Update - is there a cleaner way to just update specific data?
+app.put("/pokedex/:id", (req,res) => {
+    let changePkmn = pokedex[req.params.id]
+        changePkmn.name = req.body.name
+        changePkmn.id = req.body.id
+        changePkmn.type = req.body.type
+    res.redirect("/pokedex")
+})
+
 // Create
 app.post("/pokedex", (req,res) => {
     pokedex.push(req.body)
